@@ -120,6 +120,7 @@ class Rect {
 } 
 
 window.addEventListener("keydown",keyPressed,false);
+window.addEventListener("ontouchstart",keyPressed,false);
 ballYCoord = 475;
 ballXCoord = 150;
 move = 10;
@@ -156,7 +157,7 @@ function changeSpeed(){
 }
 
 function keyPressed(key){
-  if (key.keyCode == "32" && ballYCoord == 475){
+  if (((key.keyCode == "32") || ontouchstart) && ballYCoord == 475){
      myInterval = setInterval(moveCircle,10);
   }
 }
