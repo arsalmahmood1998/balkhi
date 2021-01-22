@@ -2,6 +2,7 @@ body{
 	font-family: "Times New Roman", Times, serif;
 	background-color: #03254c;
 	color: white;
+  overflow-x: hidden !important;
 }
 
 .bg-light {
@@ -210,6 +211,9 @@ img {vertical-align: middle;}
   */
 
   @media (min-width: 768px) and (max-width: 1024px) {
+     html,body{
+      overflow-x: hidden !important;
+    }
 
   	/* CSS */
   	.navbar-nav {
@@ -232,6 +236,9 @@ img {vertical-align: middle;}
   */
 
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+     html,body{
+      overflow-x: hidden !important;
+    }
 
   	/* CSS */
   	.navbar-nav {
@@ -252,6 +259,9 @@ img {vertical-align: middle;}
 
   }
   @media (min-width: 667px) and (max-width: 768px) and (orientation: landscape){
+     html,body{
+      overflow-x: hidden !important;
+    }
   	.btn{
   		margin-left: 35%;
   	}
@@ -265,6 +275,9 @@ img {vertical-align: middle;}
   @media (min-width: 481px) and (max-width: 767px) {
 
   	/* CSS */
+     html,body{
+      overflow-x: hidden !important;
+    }
   	.navbar-nav {
   		padding-left: 0%;
   	}
@@ -288,6 +301,10 @@ img {vertical-align: middle;}
   @media (min-width: 320px) and (max-width: 480px) {
 
   	/* CSS */
+
+    html,body{
+      overflow-x: hidden !important;
+    }
   	.navbar-nav {
   		padding-left: 0%;
   	}
@@ -326,6 +343,46 @@ img {vertical-align: middle;}
   	}
   }
 
-  @media (min-width: 320px) and (max-width: 395px) {
+  @media  (min-width: 320px) and (max-width: 376px) {
+
+    body{
+      overflow: hidden;
+    }
+    .navbar-nav {
+      padding-left: 0%;
+    }
+    h1 , h2{
+      font-size: 2em;
+    } 
+
+    ul{
+      padding-left: 1em;
+    }
+
+    #ballsCanvas, #gameCanvas{
+      height: 200px;
+      width: 300px;
+      margin-left: 11%;
+    }
+    .prev, .next,.text {
+      font-size: 15px
+    }
+    .btn{
+      width: 100px;
+      margin-left: 35%;
+      height: 30px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .col-md-4{
+      float: none;
+    }
+    .col-md-4 >h4{
+      text-align: center;
+    }
+    .col-md-4 >img{
+      margin-left: 17%;
+    }
   }
 }
