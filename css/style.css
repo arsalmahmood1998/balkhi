@@ -301,7 +301,7 @@ img {vertical-align: middle;}
 
   	#ballsCanvas, #gameCanvas{
   		height: 200px;
-  		width: 3000px;
+  		width: 300px;
   		margin-left: 14%;
   	}
   	.prev, .next,.text {
