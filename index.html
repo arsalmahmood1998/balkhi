@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  
+
+
+  <title>Balkhi</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="logo"src="images/logo.jpg"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Machine vision</a></li>
+              <li><a class="dropdown-item" href="#">Compputer Vision</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Other Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1>Balkhi Pvt Ltd</h1>
+  <canvas id="ballsCanvas" width="700px" height="400px"></canvas>
+  <div class="row"><h1>Our Services</h1></div> 
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="text"><strong>Machine Vision</strong></div>
+      <img src="images/maachineVision.jpg">
+      <div><button type="button" class="btn"><strong>Read More</strong></button></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="text">Machine Vision</div>
+      <img src="images/machineVision.jpg">
+      <div><button type="button" class="btn"><strong>Read More</strong></button></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="text"><strong>Computer Vision</strong></div>
+      <img src="images/computerVision.jpg">
+      <div><button type="button" class="btn"><strong>Read More</strong></button></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="text"><strong>Computer Vision</strong></div>
+      <img src="images/computerVision.png">
+      <div><button type="button" class="btn"><strong>Read More</strong></button></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  </div>
+
+  <div class=row><h1>Our Solution</h1></div>
+  <div class="container">
+    <div class="col-md-4 shadow p-3 mb-5  rounded">
+      <h4>Web Solution</h4>
+      <img src="images/webSol.png">
+      <button type="button" class="btn">Web Solution</button>
+    </div>
+    <div class="col-md-4 shadow p-3 mb-5  rounded">
+      <h4>Android/IOS</h4>
+      <img src="images/androidSol.png">
+      <button type="button" class="btn">Android/IOS</button>
+    </div>
+    <div class="col-md-4 shadow p-3 mb-5  rounded">
+      <h4>Desktop Solutions</h4>
+      <img src="images/desktopSol.png">
+      <button type="button" class="btn">Desktop Solution</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-4 shadow p-3 mb-5  rounded">
+      <h4>SEO</h4>
+      <img src="images/searchSol.png">
+      <button type="button" class="btn">SEO</button>
+    </div>
+    <div class="col-md-4 shadow p-3 mb-5  rounded">
+      <h4>Media Solution</h4>
+      <img src="images/mediaSol.jpg">
+      <button type="button" class="btn">Media Solution</button>
+    </div>
+    <div class="col-md-4 shadow p-3 mb-5  rounded">
+      <h4>Domain/Hosting</h4>
+      <img src="images/domainSol.png">
+      <button type="button" class="btn">Domain/Hosting</button>
+    </div>
+  </div>
+  <div> 
+    <canvas id="gameCanvas" width="1000px" height="500px"></canvas>
+  </div>
+  <div class="row">
+    <h1>Our Projects</h1>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+body{
+	font-family: "Times New Roman", Times, serif;
+	background-color: #03254c;
+	color: white;
+}
+
+.bg-light {
+	background-color: #187bcd !important;
+}
+
+.dropdown-menu{
+	background-color: #2a9df4 !important;
+}
+
+.dropdown-item:hover{
+	background-color: #d0efff !important;
+}
+.navbar-nav{
+	padding-left: 60%;
+}
+
+.navbar-toggler{
+	background-color: #2a9df4 !important;
+}
+
+.nav-link{
+	font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show > .nav-link{
+	color: black;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+	color: #03254c;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	font-size: 5em;
+	color: #d0efff;
+}
+
+#ballsCanvas{
+	border : 3px solid #d0efff;
+	margin-left: 25%;
+}
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides > img{
+	width:100%;
+}
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #187bcd;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color:  #2a9df4 ;
+	color: black;
+}
+
+/* Caption text */
+.text {
+	color: #3fe0d0;
+	font-size: 45px;
+	padding: 8px 12px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+	background-color:  #2a9df4 ;
+}
+
+/* Fading animation */
+
+.fade:not(.show) {
+	opacity: 1;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+.btn{
+	width: 200px;
+	border-radius: 20px;
+	margin-left: 40%;
+	height: 50px;
+	background-color:  #187bcd;
+	color: white;
+	font-size: 20px;
+	bottom: 8px;
+	position: absolute;
+}
+
+.btn:hover{
+	background-color: white;
+	color: black;
+}
+
+.col-md-4{
+	float:left;
+	background-color: #0080FF;
+}
+.col-md-4 >h4{
+	text-align: center;
+}
+.col-md-4 >img{
+	margin-left: 20%;
+}
+
+.col-md-4 > .btn{
+	margin-left: 30%;
+	border-radius: 15px;
+	position: relative;
+	width: 150px;
+	height: 30px;
+	background-color:  #03254c;
+	margin-top:5%;
+	font-size: 14px;
+}
+
+.col-md-4 > .btn:hover{
+	background-color: white;
+	color: black;
+}
+
+#gameCanvas{
+  margin-left: 15%;
+  border : 3px solid #d0efff;
+}
+
+
+
+@media (min-width: 1281px) {
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+  */
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+
+  	/* CSS */
+
+  }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+  */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+  	/* CSS */
+  	.navbar-nav {
+  		padding-left: 0%;
+  	}
+
+  	h1 , h2{
+  		font-size: 3em;
+  	} 
+  	#ballsCanvas, #gameCanvas{
+  		height: 250px;
+  		width: 550px;
+  		margin-left: 15%;
+  	}
+  }
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+  */
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  	/* CSS */
+  	.navbar-nav {
+  		padding-left: 0%;
+  	}
+
+  	h1 , h2{
+  		font-size: 3em;
+  	} 
+  	#ballsCanvas, #gameCanvas{
+  		height: 250px;
+  		width: 550px;
+  		margin-left: 15%;
+  	}
+  	.btn{
+  		margin-left: 38%;
+  	}
+
+  }
+  @media (min-width: 667px) and (max-width: 768px) and (orientation: landscape){
+  	.btn{
+  		margin-left: 35%;
+  	}
+  }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+  */
+
+  @media (min-width: 481px) and (max-width: 767px) {
+
+  	/* CSS */
+  	.navbar-nav {
+  		padding-left: 0%;
+  	}
+
+  	h1 , h2{
+  		font-size: 3em;
+  	} 
+  	#ballsCanvas, #gameCanvas{
+  		height: 200px;
+  		width: 350px;
+  		margin-left: 25%;
+  	}
+
+  }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  */
+
+  @media (min-width: 320px) and (max-width: 480px) {
+
+  	/* CSS */
+  	.navbar-nav {
+  		padding-left: 0%;
+  	}
+  	h1 , h2{
+  		font-size: 2em;
+  	} 
+
+  	ul{
+  		padding-left: 1em;
+  	}
+
+  	#ballsCanvas, #gameCanvas{
+  		height: 200px;
+  		width: 250px;
+  		margin-left: 18%;
+  	}
+  	.prev, .next,.text {
+  		font-size: 15px
+  	}
+  	.btn{
+  		width: 100px;
+  		margin-left: 35%;
+  		height: 30px;
+  		font-size: 15px;
+  		text-align: center;
+  	}
+
+  	.col-md-4{
+  		float: none;
+  	}
+  	.col-md-4 >h4{
+  		text-align: center;
+  	}
+  	.col-md-4 >img{
+  		margin-left: 17%;
+  	}
+  }
+
+  @media (min-width: 320px) and (max-width: 395px) {
+  }
+}
