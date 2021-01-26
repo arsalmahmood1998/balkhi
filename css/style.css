@@ -246,6 +246,33 @@ img {vertical-align: middle;}
   color: black;
 }
 
+.container{
+  text-align: center;
+}
+
+footer{
+  margin-top: 200px;
+  font-size: 25px;
+}
+
+footer > hr{
+  border: 2px solid white;
+}
+
+footer > p{
+  color: #2a9df4;
+  text-align: center;
+}
+
+footer > ul> a{
+  color: #2a9df4;
+  text-decoration: none;
+  margin-left: 10%;
+}
+
+footer > ul> a:hover{
+  color: #FFD662FF;
+}
 
 @media (min-width: 1281px) {
 
@@ -314,17 +341,16 @@ img {vertical-align: middle;}
     margin-left: 38%;
   }
   #innerContainer > img {
-      width : 500px;
-      height: 300px;
-    }
-    #container > .row > button{
-      width: 200px;
-      font-size: 20px;
-    }
-    #container{
-      height: 40%;
-    }
-
+    width : 500px;
+    height: 300px;
+  }
+  #container > .row > button{
+    width: 200px;
+    font-size: 20px;
+  }
+  #container{
+    height: 40%;
+  }
 }
 @media (min-width: 667px) and (max-width: 768px) and (orientation: landscape){
  html,body{
@@ -358,18 +384,18 @@ img {vertical-align: middle;}
     width: 350px;
     margin-left: 25%;
   }
-    #innerContainer > img {
-      width : 400px;
-      height: 250px;
-    }
-    #container > .row > button{
-      width: 200px;
-      font-size: 20px;
-    }
-    #container{
-      width: 70%;
-      height: 50%;
-    }
+  #innerContainer > img {
+    width : 400px;
+    height: 250px;
+  }
+  #container > .row > button{
+    width: 200px;
+    font-size: 20px;
+  }
+  #container{
+    width: 70%;
+    height: 50%;
+  }
 
 }
 

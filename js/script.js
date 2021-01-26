@@ -174,7 +174,6 @@ function drawCircle(yCoord,xCoord){
   gameContext.fillStyle = "red";
   gameContext.fill();
   gameContext.stroke();
-
 }
 
 var collision = false;
