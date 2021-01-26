@@ -157,7 +157,7 @@ function changeSpeed(){
 }
 
 function keyPressed(key){
-  if ((key.keyCode == "32") && ballYCoord == 475){
+  if ((key.keyCode == "13") && ballYCoord == 475){
      myInterval = setInterval(moveCircle,10);
   }
 }
@@ -198,10 +198,35 @@ function title(){
   gameContext.textAlign = "center";
   gameContext.fillText("Highest Score "+highestScore.toString(), 500, 100);
   gameContext.fillText("Score: "+score.toString(), 800, 100);
-  gameContext.fillText("Press Space Bar", 150, 100);
+  gameContext.fillText("Press Enter", 150, 100);
 }
 
 var game = setInterval(gameCanvasDraw,15);
+
+var array = ["Project 1","Project 2","Project 3","Project 4","Project 5"];
+var projects = ["project1.jpg", "project2.png", "project3.jpg","project4.jpg","project5.png"];
+var index = 0;
+document.getElementById("h1").innerHTML=array[0];
+
+
+function projectForward(){
+  index +=1;
+  if (index == 5){
+    index =0;
+  }
+  document.getElementById("projectImage").src="images/"+projects[index].toString();
+  document.getElementById("h1").innerHTML=array[index]
+}
+
+function projectBackward(){
+  index -=1;
+  if (index == -1){
+    index =4;
+  }
+  document.getElementById("projectImage").src="images/"+projects[index].toString();
+  document.getElementById("h1").innerHTML=array[index];
+}
+
 
 
 
