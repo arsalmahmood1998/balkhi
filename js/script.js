@@ -120,7 +120,6 @@ class Rect {
 } 
 
 window.addEventListener("keydown",keyPressed,false);
-window.addEventListener("ontouchstart",touchEvent,false);
 ballYCoord = 475;
 ballXCoord = 150;
 move = 10;
@@ -161,9 +160,16 @@ function keyPressed(key){
      myInterval = setInterval(moveCircle,10);
   }
 }
+
 function touchEvent(){
   myInterval = setInterval(moveCircle,10);
 }
+
+if ('ontouchstart'in window){
+  touchEvent();
+  console.log("touched");
+}
+
 function stop(){
   clearInterval(myInterval);
 }
