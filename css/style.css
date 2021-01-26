@@ -314,12 +314,15 @@ img {vertical-align: middle;}
     margin-left: 38%;
   }
   #innerContainer > img {
-      width : 300px;
-      height: 200px;
+      width : 600px;
+      height: 350px;
     }
     #container > .row > button{
       width: 200px;
       font-size: 20px;
+    }
+    #container{
+      height: 50%;
     }
 
 }
