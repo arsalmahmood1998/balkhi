@@ -120,7 +120,7 @@ class Rect {
 } 
 
 window.addEventListener("keydown",keyPressed,false);
-document.getElementById("gameCanvas").addEventListener("ontouchstart",touchEvent);
+document.getElementById("gameCanvas").addEventListener("ontouchstart",touchEvent,false);
 ballYCoord = 475;
 ballXCoord = 150;
 move = 10;
