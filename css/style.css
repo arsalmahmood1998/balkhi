@@ -284,6 +284,10 @@ footer > ul> a:hover{
   color: #FFD662FF;
 }
 
+footer >.row> h2{
+  text-align: center;
+}
+
 @media (min-width: 1281px) {
 
 }
@@ -543,5 +547,8 @@ footer{
     }
     footer{
       font-size: 18px;
+    }
+    .col-md-3{
+      width: 25%;
     }
   }
