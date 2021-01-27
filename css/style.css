@@ -250,9 +250,26 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
+#textRow{
+  position: relative;
+}
+
+.row> h1{
+  text-align: center;
+}
+
+.row> p{
+  text-align: center;
+  font-size: 18px;
+}
+
 footer{
   margin-top: 200px;
   font-size: 25px;
+}
+
+footer > .row > .col-sm-4 > span{
+  text-align: center;
 }
 
 footer > hr{
@@ -260,14 +277,15 @@ footer > hr{
 }
 
 footer > p{
-  color: #2a9df4;
+  color: white;
   text-align: center;
 }
 
 footer > ul> a{
-  color: #2a9df4;
+  color: white;
   text-decoration: none;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 footer > ul> a:hover{
@@ -304,7 +322,7 @@ footer > ul> a:hover{
     padding-left: 0%;
   }
 
-  h1 , h2{
+  h1 , h2 ,h4{
     font-size: 3em;
   } 
   #ballsCanvas, #gameCanvas{
@@ -329,7 +347,7 @@ footer > ul> a:hover{
     padding-left: 0%;
   }
 
-  h1 , h2{
+  h1 , h2, h4{
     font-size: 3em;
   } 
   #ballsCanvas, #gameCanvas{
@@ -376,7 +394,7 @@ footer > ul> a:hover{
     padding-left: 0%;
   }
 
-  h1 , h2{
+  h1 , h2, h4{
     font-size: 3em;
   } 
   #ballsCanvas, #gameCanvas{
@@ -414,7 +432,7 @@ footer > ul> a:hover{
     .navbar-nav {
       padding-left: 0%;
     }
-    h1 , h2{
+    h1 , h2, h4{
       font-size: 2em;
     } 
 
@@ -468,7 +486,7 @@ footer > ul> a:hover{
     .navbar-nav {
       padding-left: 0%;
     }
-    h1 , h2{
+    h1 , h2, h4{
       font-size: 2em;
     } 
 
