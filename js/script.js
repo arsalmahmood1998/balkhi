@@ -120,7 +120,6 @@ class Rect {
 } 
 
 window.addEventListener("keydown",keyPressed,false);
-document.getElementById("gameCanvas").addEventListener("ontouchstart",touchEvent,false);
 ballYCoord = 475;
 ballXCoord = 150;
 move = 10;
@@ -163,7 +162,6 @@ function keyPressed(key){
 }
 function touchEvent(){
   myInterval = setInterval(moveCircle,10);
-  alert("hello");
 }
 function stop(){
   clearInterval(myInterval);
