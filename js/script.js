@@ -163,6 +163,7 @@ function keyPressed(key){
 }
 function touchEvent(){
   myInterval = setInterval(moveCircle,10);
+  alert("hello");
 }
 function stop(){
   clearInterval(myInterval);
