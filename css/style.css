@@ -528,6 +528,12 @@ footer{
       width: 300px;
       margin-left: 11%;
     }
+
+    #gameCanvas{
+      height: 300px;
+      width: 350px;
+      margin-left: 3.5%;
+    }
     .prev, .next,.text {
       font-size: 15px
     }
