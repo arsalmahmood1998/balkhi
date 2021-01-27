@@ -326,6 +326,9 @@ footer > ul> a:hover{
   .container > .col-md-4 > h4{
     font-size: 1.5em;
   }
+  .col-md-3{
+    width: 25%;
+  }
 }
 
 /* 
@@ -380,6 +383,9 @@ footer > ul> a:hover{
 footer{
   font-size: 20px;
 }
+.col-md-3{
+  width: 25%;
+}
 }
 
 /* 
@@ -423,6 +429,9 @@ footer{
 
   #teamColumn{
     width: 33%;
+  }
+  .col-md-3{
+    width: 25%;
   }
 
 }
@@ -493,7 +502,7 @@ footer{
       height: 200px;
     }
     .col-md-3{
-      width: 97px;
+      width: 25%;
     }
   }
 
