@@ -29,15 +29,15 @@
             <a class="nav-link" href="#">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
+            <a class="nav-link" href="#team">Team</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Machine vision</a></li>
-              <li><a class="dropdown-item" href="#">Compputer Vision</a></li>
+              <li><a class="dropdown-item" href="machineVision.html">Machine vision</a></li>
+              <li><a class="dropdown-item" href="computerVision.html">Computer Vision</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Other Services</a></li>
             </ul>
@@ -63,19 +63,19 @@
     <div class="mySlides fade">
       <div class="text">Machine Vision</div>
       <img src="images/machineVision.jpg">
-      <div><button type="button" class="btn"><strong>Read More</strong></button></div>
+      <div><a href="machineVision.html"><button type="button" class="btn"><strong>Read More</strong></button></a></div>
     </div>
 
     <div class="mySlides fade">
       <div class="text"><strong>Computer Vision</strong></div>
       <img src="images/computerVision.jpg">
-      <div><button type="button" class="btn"><strong>Read More</strong></button></div>
+      <div><a href="computerVision.html"><button type="button" class="btn"><strong>Read More</strong></button></a></div>
     </div>
 
     <div class="mySlides fade">
       <div class="text"><strong>Computer Vision</strong></div>
       <img src="images/computerVision.png">
-      <div><button type="button" class="btn"><strong>Read More</strong></button></div>
+      <div><a href="computerVision.html"><button type="button" class="btn"><strong>Read More</strong></button></a></div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -142,42 +142,47 @@
       <div class="row"><button type="button">Read More</button></div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="team">
     <h1>Our Team</h1>
-    <div class="col-md-4 shadow p-3 mb-5  rounded">
+    <div class="col-md-4 shadow p-3 mb-5  rounded" id="teamColumn">
       <h2>Ansab Ijaz</h2>
       <h4>MS</h4>
     </div>
-    <div class="col-md-4 shadow p-3 mb-5  rounded">
+    <div class="col-md-4 shadow p-3 mb-5  rounded"  id="teamColumn">
       <h2>Ahmed</h2>
       <h4>BS</h4>
     </div>
-    <div class="col-md-4 shadow p-3 mb-5  rounded">
+    <div class="col-md-4 shadow p-3 mb-5  rounded"  id="teamColumn">
       <h2>Talha Hassan</h2>
       <h4>MS</h4>
     </div>
   </div>
   <footer>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-md-6">
         <span>Hours:</span><br>
         Monday to Sunday: 11am - 11pm<br>
-        <hr class="visible-xs">
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-6">
         <span>Address:</span><br>
         Sui Gas Society Lahore
-        <hr class="visible-xs">
       </div>
     </div>
     <p>Copyright &copy; 2020 Balkhi Pvt Ltd. All rights reserved.</p>
-    <ul>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Sales and Refunds</a>
-      <a href="#">Legal</a>
-      <a href="#">Site Map</a>
-    </ul>
+    <div class="row">
+      <div class="col-md-3">
+        <a href=""><img class="mx-auto d-block" src="images/fb.png"></a>
+      </div>
+      <div class="col-md-3">
+        <a href=""><img class="mx-auto d-block" src="images/in.png"></a>
+      </div>
+      <div class="col-md-3">
+        <a href=""><img class="mx-auto d-block" src="images/insta.png"></a>
+      </div>
+      <div class="col-md-3">
+        <a href=""><img class="mx-auto d-block" src="images/whatsapp.png"></a>
+      </div>
+    </div>
   </footer>
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
