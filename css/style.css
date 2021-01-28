@@ -186,7 +186,7 @@ img {vertical-align: middle;}
 }
 
 #gameCanvas{
-  margin-left: 15%;
+  margin-left: 13%;
   border : 3px solid #d0efff;
 }
 
@@ -261,6 +261,10 @@ img {vertical-align: middle;}
 .row> p{
   text-align: center;
   font-size: 18px;
+}
+
+#projectContainer{
+  height: 400px;
 }
 
 footer{
@@ -507,6 +511,11 @@ footer{
     }
     .col-md-3{
       width: 25%;
+    }
+    #gameCanvas{
+      height: 300px;
+      width: 350px;
+      margin-left: 8.5%;
     }
   }
 
