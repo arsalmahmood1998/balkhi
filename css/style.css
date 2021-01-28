@@ -271,6 +271,26 @@ img {vertical-align: middle;}
   height: 1050px;
 }
 
+#gameButton{
+  background-color: #2a9df4;
+  border: 3px solid  #FFD662FF;
+  border-radius: 30px;
+  color: black;
+  padding: 10px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 42%;
+  font-size: 30px;
+}
+
+#gameButton:hover{
+  background-color: white;
+  color: black;
+}
+
 footer{
   margin-top: 200px;
   font-size: 25px;
@@ -520,6 +540,16 @@ footer{
       height: 300px;
       width: 350px;
       margin-left: 8.5%;
+    }
+    #projectContainer{
+      height: 100%;
+    }
+    #gameButton{
+
+      border-radius: 30px;
+      padding: 3px 30px;
+      margin-left: 36%;
+      font-size: 20px;
     }
   }
 

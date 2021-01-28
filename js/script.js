@@ -92,7 +92,17 @@ function showSlides(n) {
 
 const gameCanvas = document.getElementById("gameCanvas");
 const gameContext = gameCanvas.getContext("2d")
-let change = 4;
+let change;
+
+window.addEventListener("keydown",keyPressed,false);
+ballYCoord = 475;
+ballXCoord = 150;
+move = 10;
+var myInterval;
+var score = 0;
+var highestScore=0;
+
+var game ;
 
 class Rect {
   constructor (givenCanvas , givenContext, givenWidth, givenHeight, givenColor, givenChange){
@@ -117,54 +127,14 @@ class Rect {
     gameContext.fill();
     gameContext.stroke();
   }
-} 
-
-window.addEventListener("keydown",keyPressed,false);
-ballYCoord = 475;
-ballXCoord = 150;
-move = 10;
-var myInterval;
-var score = 0;
-var highestScore=0;
-
-function gameCanvasDraw(){
-  gameContext.clearRect(0,0,gameCanvas.width,gameCanvas.height);
-  rect.draw();
-  rect.move();
-  title();
-  drawCircle(ballYCoord,ballXCoord);
-  if (rect.x <  -rect.width){
-    createRect();
-    score += 100;
-  }
-  if ((rect.x-(ballXCoord+25)<=0) && (rect.x-(ballXCoord+25)>-25) && (rect.y<ballYCoord)){
-    clearInterval(game);
-  }
-  if (score > highestScore){
-    highestScore=score;
-  }
 }
+
+function changeRectSpeed(){
+  change +=1.5;
+} 
 
 function createRect(){
   rect = new Rect(gameCanvas, gameContext,Math.random()*70,Math.random()*200,randomChoice(colors),change), 10000;
-}
-setInterval(changeSpeed , 4500);
-createRect();
-
-function changeSpeed(){
-  change +=1.5;
-}
-
-function keyPressed(key){
-  if ((key.keyCode == "13") && ballYCoord == 475){
-     myInterval = setInterval(moveCircle,10);
-  }
-}
-function touchEvent(){
-  myInterval = setInterval(moveCircle,10);
-}
-function stop(){
-  clearInterval(myInterval);
 }
 
 function drawCircle(yCoord,xCoord){
@@ -190,6 +160,22 @@ function moveCircle(){
   }
 }
 
+var clearRectSpeed;
+function startGame(){
+  score =0;
+  change= 4;
+  game = setInterval(gameCanvasDraw,15);
+  clearRectSpeed = setInterval(changeRectSpeed , 5000);
+  createRect();
+}
+
+
+function keyPressed(key){
+  if ((key.keyCode == "13") && ballYCoord == 475){
+     myInterval = setInterval(moveCircle,10);
+  }
+}
+
 function title(){
   gameContext.font = "30px Comic Sans MS";
   gameContext.fillStyle = "white";
@@ -199,13 +185,38 @@ function title(){
   gameContext.fillText("Press Enter", 150, 100);
 }
 
-var game = setInterval(gameCanvasDraw,15);
+function gameCanvasDraw(){
+  gameContext.clearRect(0,0,gameCanvas.width,gameCanvas.height);
+  rect.draw();
+  rect.move();
+  title();
+  drawCircle(ballYCoord,ballXCoord);
+  if (rect.x <  -rect.width){
+    createRect();
+    score += 100;
+  }
+  if (((rect.x-(ballXCoord+25))<=0) && ((rect.x-(ballXCoord+25))>-25) && (rect.y<ballYCoord)){
+    clearInterval(game);
+    clearInterval(clearRectSpeed);
+  }
+  if (score > highestScore){
+    highestScore=score;
+  }
+}
+
+function touchEvent(){
+  myInterval = setInterval(moveCircle,10);
+}
+
+function stop(){
+  clearInterval(myInterval);
+}
+
 
 var array = ["Project 1","Project 2","Project 3","Project 4","Project 5"];
 var projects = ["project1.jpg", "project2.png", "project3.jpg","project4.jpg","project5.png"];
 var index = 0;
 document.getElementById("h1").innerHTML=array[0];
-
 
 function projectForward(){
   index +=1;
