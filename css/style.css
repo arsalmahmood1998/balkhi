@@ -267,6 +267,10 @@ img {vertical-align: middle;}
   height: 400px;
 }
 
+#servicesContainer{
+  height: 1050px;
+}
+
 footer{
   margin-top: 200px;
   font-size: 25px;
