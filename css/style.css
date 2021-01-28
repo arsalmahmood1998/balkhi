@@ -418,6 +418,13 @@ footer{
 .col-md-3{
   width: 25%;
 }
+#gameButton{
+
+      border-radius: 30px;
+      padding: 3px 30px;
+      margin-left: 43%;
+      font-size: 20px;
+    }
 }
 
 /* 
